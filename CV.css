@@ -1,0 +1,90 @@
+/* 
+   ============ 全局設定 ============ 
+   用 flex 讓 body 撐滿視窗高度，以確保 footer 吸底 
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   /* 至少佔滿整個視窗 */
+  margin: 0;          /* 移除預設邊距 */
+  background-color: #fefefe; /* 預設背景，可自行調整 */
+}
+
+
+/* 
+   ============ Header ============ 
+*/
+header {
+   background-color: darkseagreen;
+ }
+ header h1 {
+   color: #fff;
+   margin: 0;
+ }
+ /* 導覽列連結的樣式 */
+ header .nav-link {
+   color: #fff;
+ }
+ header .nav-link.active {
+   background-color: #0d6efd; 
+   color: #fff;
+ }
+ header .nav-link:hover {
+   background-color: #00b8d4;
+   color: #fff;
+ }
+
+
+
+/*
+   ============ Outline (浮動導航) ============
+*/
+.cvSection {
+  background-color: darkseagreen !important;
+  position: fixed !important;
+  top: 11rem;
+  left: 2rem;
+  width: 220px;
+}
+.cvSection .nav-link {
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+.cvSection .nav-link:hover {
+  background-color: #025aa5;
+}
+
+/*
+   ============ Section 內文字排版微調 ============
+   把 text-align 改成 left
+*/
+section {
+  margin-top: 3rem;
+}
+.section-title {
+  text-align: left; 
+  margin-bottom: 2rem;
+}
+
+/*
+   ============ Footer ============
+*/
+footer {
+  background-color: darkseagreen;
+}
+footer ul {
+  margin-left: 25%;
+  margin-right: 25%;
+  list-style-type: none;
+  display: flex;
+  column-gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0px;
+}
+footer p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
