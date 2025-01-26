@@ -43,7 +43,7 @@ header {
   background-color: darkseagreen !important;
   position: fixed !important;
   top: 11rem;
-  left: 1rem;
+  left: 0.5rem;
   width: 200px;
 }
 .cvSection .nav-link {
